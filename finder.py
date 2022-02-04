@@ -1,3 +1,4 @@
+''' Find the 20 strongest words to use in Wordle based on value counts '''
 import re
 import pandas
 
@@ -8,7 +9,7 @@ with open('words.txt', 'r', encoding='utf8') as f:
         line = line.strip("\n").lower()
         if len(line) == 5:
             if re.match("[a-z]{5}", line):
-                words[line] = 0 
+                words[line] = 0
                 for char in line:
                     data.append(char)
     df = pandas.DataFrame(data)
