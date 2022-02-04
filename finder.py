@@ -9,7 +9,7 @@ with open("words.txt") as f:
     
     for line in f:
         line = line.strip("\n").lower()
-        if len(line) == 5
+        if len(line) == 5:
             if re.match("[a-z]{5}", line):
                 words[line] = 0
                 
