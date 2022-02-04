@@ -1,7 +1,7 @@
 import re
 import pandas
 
-with open("words.txt") as f:
+with open('words.txt', 'r', encoding='utf8') as f:
     data = []
     words = {}
     for line in f:
