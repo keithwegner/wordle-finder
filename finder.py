@@ -1,15 +1,14 @@
-#!/usr/bin/env python
-import pandas
 import re
+import pandas
 
 with open("words.txt") as f:
     data = []
-    words = {}    
+    words = {}
     for line in f:
         line = line.strip("\n").lower()
         if len(line) == 5:
             if re.match("[a-z]{5}", line):
-                words[line] = 0                
+                words[line] = 0 
                 for char in line:
                     data.append(char)
     df = pandas.DataFrame(data)
