@@ -1,12 +1,11 @@
-
+''' Just test something for CodeCov tool '''
 import unittest
 
-''' Just test something for CodeCov tool '''
 class Testing(unittest.TestCase):
+    ''' Class docstring'''
     def test_boolean(self):
-        a = True
-        b = True
-        self.assertEqual(a, b)
+        ''' Tests docstring '''
+        self.assertEqual(True, True)
 
 if __name__ == '__main__':
     unittest.main()
