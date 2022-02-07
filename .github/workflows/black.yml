@@ -1,5 +1,6 @@
 uses: piotrpawlaczek/python-blacken@release/stable
 
+on: [push]
 
 with:
   line-length: '120'
