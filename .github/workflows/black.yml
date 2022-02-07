@@ -1,13 +1,11 @@
-Name: Blacken
-
-on: [push, pull_request]  
-
+name: Blacken
+on: [push, pull_request]
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: psf/black@stable
+    - uses: actions/checkout@v2
+    - uses: psf/black@stable
       with:
         line-length: '120'
         path: 'finder/'
